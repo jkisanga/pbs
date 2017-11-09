@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'pbs_new',
+			'database'  => 'pbs',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

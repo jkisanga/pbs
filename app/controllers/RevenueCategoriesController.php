@@ -177,8 +177,30 @@ class RevenueCategoriesController extends \BaseController {
         $submission = Revenuecategory::find($input->category_id);
         $valid = Validator::make(Input::all(),$rules);
         if($valid->passes()){
+
+//            $input->item_code = Input::get('item_code');
+//            $input->type_of_fee = Input::get('type_of_fee');
+//            $input->royalty = Input::get('royalty');
+//            $input->taff = Input::get('taff');
+//            $input->vat = Input::get('vat');
+//            $input->cess = Input::get('cess');
+//            $input->lmda = Input::get('lmda');
+//            $input->tree = Input::get('tree');
+//            $input->category_id = $id;
+//            $input->save();
+//
+
+
+
+
             $input->item_code = Input::get('item_code');
             $input->type_of_fee = Input::get('type_of_fee');
+            $input->royalty = Input::get('royalty');
+            $input->taff = Input::get('taff');
+            $input->vat = Input::get('vat');
+            $input->cess = Input::get('cess');
+            $input->lmda = Input::get('lmda');
+            $input->tree = Input::get('tree');
             $input->category_id = $submission->id;
             $input->save();
 
